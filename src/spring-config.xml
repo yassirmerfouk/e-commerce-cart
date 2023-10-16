@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--  
+	<bean id="entityManagerHelper" class="helpers.EntityManagerHelper">
+		<property name="persistenceUnitName" value="ecommerce"></property>
+	</bean>
+-->
+	
+
+<!--  <bean id="dataBase" class="db.DataBase" /> -->
+
+	<bean id="adminDao" class="ImpDaoJpa.AdminDaoJpa">
+		<!-- <property name="dataBase" ref="dataBase"></property> -->
+	</bean>
+	<bean id="categoryDao" class="ImpDaoJpa.CategoryDaoJpa">
+		<!-- <property name="dataBase" ref="dataBase"></property> -->
+	</bean>
+	<bean id="productDao" class="ImpDaoJpa.ProductDaoJpa">
+		<!-- <property name="dataBase" ref="dataBase"></property> -->
+	</bean>
+</beans>
